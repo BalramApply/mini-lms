@@ -1,0 +1,224 @@
+/* Custom Styles for Mini LMS */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+/* Landing Page Styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* Dashboard Stats Cards */
+.stats-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.stats-card.success {
+    border-left-color: var(--success-color);
+}
+
+.stats-card.warning {
+    border-left-color: var(--warning-color);
+}
+
+.stats-card.info {
+    border-left-color: var(--info-color);
+}
+
+.stats-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+/* Course Card */
+.course-card {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.course-card .card-body {
+    padding: 20px;
+}
+
+.course-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Table Styles */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.btn-action {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    margin: 0 2px;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.auth-card {
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+/* Badge Styles */
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    border: none;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+}
+
+/* Progress Bar */
+.progress {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    font-weight: bold;
+}
+
+/* Course Material Icon */
+.material-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+/* Enrollment Status */
+.status-enrolled {
+    color: var(--info-color);
+}
+
+.status-in-progress {
+    color: var(--warning-color);
+}
+
+.status-completed {
+    color: var(--success-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .stats-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Loading Spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
